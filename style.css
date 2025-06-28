@@ -14,8 +14,8 @@ header {
 main {
     padding: 20px;
 }
-main-section {
-    display: block;
+.section-1 {
+    display: flex;
 }
 /* .mo-picture {
     width: 100%;
