@@ -38,3 +38,57 @@ header.dark-mode {
 footer.dark-mode {
     background-color: #444;
 }
+
+/* Add container for centering */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Create two-column layout */
+.two-columns {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* Left column for image */
+.left-column {
+    flex: 0 0 300px; /* Fixed width of 300px */
+}
+
+/* Right column for text */
+.right-column {
+    flex: 1; /* Takes remaining space */
+}
+
+/* Style the image */
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Make it responsive - stack on mobile */
+@media (max-width: 768px) {
+    .two-columns {
+        flex-direction: column;
+    }
+    
+    .left-column {
+        flex: 1;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}

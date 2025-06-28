@@ -7,31 +7,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Keep your existing header -->
     <header>
         <h1>Welcome to My Portfolio</h1>
     </header>
-    <main>
-        <section class="section-1">
-            <img class="mo-picture" src="images/mo.jpg" alt="MO Picture">
-        </section>
-        <section class="section-1">
-            <section>
-                <h2>About Me</h2>
-                <p>Hello, I'm MO, a software engineer with a passion for financial inclusion and creating user-friendly and efficient software. I have a strong foundation in finance and strategy, and always looking for new challenges and opportunities to grow.</p>
-            </section>
-            <section>
-                <h2>Contact</h2>
-                <p>Email: mo@gmail.com, mofargbo@gmail.com</p>
-                <p>Phone: 123-456-7890, 123-456-7899</p>
-            </section>
-            <section>
-                <h2>Projects</h2>
-                <p>This is my portfolio</p>
-            </section>
-    </section class="section-1">
+
+    <!-- MODIFY: Wrap everything in a container and create two columns -->
+    <main class="container">
+        <div class="two-columns">
+            <!-- LEFT COLUMN - Move image here -->
+            <div class="left-column">
+                <img src="images/mo.jpg" alt="MO's professional photo" class="profile-image">
+            </div>
+
+            <!-- RIGHT COLUMN - Move all text content here -->
+            <div class="right-column">
+                <section>
+                    <h2>About Me</h2>
+                    <p>Hello, I'm MO, a software engineer with a passion for financial inclusion and creating user-friendly and efficient software. I have a strong foundation in finance and strategy, and always looking for new challenges and opportunities to grow.</p>
+                </section>
+
+                <section>
+                    <h2>Contact</h2>
+                    <p>Email: mo@gmail.com, mofargbo@gmail.com</p>
+                    <p>Phone: 123-456-7890, 123-456-7899</p>
+                </section>
+
+                <section>
+                    <h2>Projects</h2>
+                    <p>This is my portfolio</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Keep your existing footer -->
     <footer>
-        <p>&copy;2025 MO. All rights reserved.</p>
+        <p>&copy;2025 MO Fargbo. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
